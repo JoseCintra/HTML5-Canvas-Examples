@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+  <body>
+    <canvas id='canvas' width='800' height='800'></canvas>
+<script>
+var pincel = document.getElementById('canvas').getContext('2d');
+var img = new Image();
+
+        //drawing of the test image - img1
+        img.onload = function () {
+            //draw background image
+            pincel.drawImage(img, 0, 0);
+            //draw a box over the top
+            //pincel.fillStyle = "rgba(200, 0, 0, 0.5)";
+            //.fillRect(0, 0, 500, 500);
+
+        };
+
+        img.src = 'html5.png';
+        </script>
+
+
+  </body>
+</html>  
