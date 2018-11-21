@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Título da página</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="arquivo.css">
+</head>
+
+<body>
+
+  <canvas id='canvas' width='600' height='600'>
+	  Seu navegador não suporta Canvas do HTML5.
+  </canvas>
+
+
+<script>
+var canvas = document.getElementById('canvas');
+var pincel = canvas.getContext('2d');
+
+pincel.font = "30px Arial";
+pincel.strokeStyle = 'green';
+pincel.fillStyle = 'red';
+pincel.fillText("Hello",10,50);
+pincel.strokeText("World",10,200);
+</script>
+</body>
+
+</html>

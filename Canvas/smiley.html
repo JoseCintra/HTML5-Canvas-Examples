@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Título da página</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="arquivo.css">
+</head>
+
+<body>
+
+  <canvas id='canvas' width='600' height='600'>
+	  Seu navegador não suporta Canvas do HTML5.
+  </canvas>
+
+
+<script>
+var pincel = document.getElementById('canvas').getContext('2d');
+pincel.beginPath();
+pincel.arc(75, 75, 50, 0, Math.PI* 2, true); // Rosto
+pincel.fillStyle= 'yellow';
+pincel.fill();
+pincel.moveTo(110, 75);
+pincel.arc(75, 75, 35, 0, Math.PI, false); // Boca
+pincel.moveTo(65, 65);
+pincel.arc(60, 65, 5, 0, Math.PI* 2, true); // olho esquerdo
+pincel.moveTo(95, 65);
+pincel.arc(90, 65, 5, 0, Math.PI* 2, true); // Olho direito
+pincel.stroke();
+</script>
+</body>
+
+</html>

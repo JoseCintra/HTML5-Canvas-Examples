@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Título da página</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="arquivo.css">
+</head>
+
+<body>
+
+  <canvas id='canvas' width='600' height='600'>
+	  Seu navegador não suporta Canvas do HTML5.
+  </canvas>
+
+
+<script>
+var pincel = document.getElementById('canvas').getContext('2d');
+pincel.moveTo(100, 25); pincel.lineWidth = 2;
+pincel.lineTo(300, 25); pincel.lineTo(325, 100);
+pincel.lineTo(150, 100); pincel.closePath();
+pincel.fillStyle = "#C81E1E"; pincel.fill();
+pincel.moveTo(100, 25); pincel.lineTo(25, 100)
+pincel.moveTo(30, 95); pincel.lineTo(30, 200);
+pincel.lineTo(150, 200); pincel.stroke();
+pincel.moveTo(150, 100); pincel.lineTo(150, 200);
+pincel.lineTo(325, 190); pincel.lineTo(325, 100);
+pincel.closePath(); pincel.stroke();
+pincel.fillStyle = "#91913C"; pincel.fillRect(68, 125, 40, 75);
+</script>
+</body>
+
+</html>

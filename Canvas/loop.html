@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <title>Título da página</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="arquivo.css">
+</head>
+
+<body>
+
+  <canvas id='canvas' width='600' height='600'>
+	  Seu navegador não suporta Canvas do HTML5.
+  </canvas>
+
+
+<script>
+//Usando estruturas de repetição para desenhar os quadrados
+var pincel = document.getElementById('canvas').getContext('2d');
+for(x = 70; x > 0;x -= 10){
+pincel.strokeRect(100-(x/2),100-(x/2),x,x)
+}
+</script>
+</body>
+
+</html>
